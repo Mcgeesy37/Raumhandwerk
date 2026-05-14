@@ -81,21 +81,28 @@ document.body.style.overflow = ‘’;
 });
 })();
 
-/* ── SCROLL REVEAL (IntersectionObserver) ───── */
 (function initReveal() {
-const els = document.querySelectorAll(’.reveal-up, .reveal-left, .reveal-right’);
-if (!els.length) return;
+  const els = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
+  if (!els.length) return;
 
-const io = new IntersectionObserver((entries) => {
-entries.forEach(entry => {
-if (entry.isIntersecting) {
-entry.target.classList.add(‘visible’);
-io.unobserve(entry.target);
-}
-});
-}, { threshold: 0.12, rootMargin: ‘0px 0px -40px 0px’ });
+  // Sofort-Fallback: falls Observer nicht feuert, alles nach 800ms einblenden
+  const fallback = setTimeout(() => {
+    els.forEach(el => el.classList.add('visible'));
+  }, 800);
 
-els.forEach(el => io.observe(el));
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.01, rootMargin: '0px 0px 0px 0px' }); // weniger streng
+
+  els.forEach(el => io.observe(el));
+
+  // Observer läuft → Fallback abbrechen
+  setTimeout(() => clearTimeout(fallback), 100);
 })();
 
 /* ── COUNTER ANIMATION ──────────────────────── */

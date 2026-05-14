@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Raumhandwerk – Professionelle Renovierung & Handwerksleistungen. Malerarbeiten, Bodenverlegung, Trockenbau & Komplettrenovierungen. Kostenlose Beratung." />
+  <meta name="keywords" content="Handwerk, Renovierung, Malerarbeiten, Bodenverlegung, Trockenbau, Badezimmer, Komplettrenovierung" />
+  <title>Raumhandwerk – Handwerk mit Leidenschaft</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ██ COOKIE BANNER ██ -->
+
+  <div id="cookieBanner" class="cookie-banner">
+    <div class="cookie-inner">
+      <p>Wir nutzen Cookies für eine optimale Website-Erfahrung. <a href="datenschutz.html">Mehr erfahren</a></p>
+      <div class="cookie-btns">
+        <button class="cookie-accept" onclick="acceptCookies()">Alle akzeptieren</button>
+        <button class="cookie-decline" onclick="declineCookies()">Ablehnen</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ██ WHATSAPP FLOAT ██ -->
+
+<a href="https://wa.me/4915XXXXXXXXX?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20Ihre%20Handwerksleistungen%20und%20w%C3%BCrde%20gerne%20ein%20kostenloses%20Angebot%20erhalten."
+class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Kontakt">
+<i class="fab fa-whatsapp"></i>
+<span class="wa-bubble">Jetzt anfragen!</span>
+</a>
+
+  <!-- ██ HEADER / NAV ██ -->
+
+  <header id="siteHeader" class="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="logo" aria-label="Raumhandwerk Startseite">
+        <span class="logo-r">R</span>
+        <span>Raumhandwerk</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#leistungen">Leistungen</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#preise">Preise</a></li>
+        <li><a href="#ueber-uns">Über uns</a></li>
+        <li><a href="#kontakt" class="nav-cta-link">Kostenlos anfragen</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ██ HERO ██ -->
+
+  <section class="hero" id="home">
+    <div class="hero-bg-img"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-body">
+      <div class="hero-tag reveal-up">⭐ 5,0 · Über 200 zufriedene Kunden in der Region</div>
+      <h1 class="hero-h1">
+        <span class="line reveal-up delay-1">Ihr Raum.</span>
+        <span class="line reveal-up delay-2 gold-text">Unser Handwerk.</span>
+      </h1>
+      <p class="hero-sub reveal-up delay-3">
+        Malerarbeiten · Bodenbeläge · Trockenbau · Komplettrenovierung<br>
+        Präzise ausgeführt. Termingerecht geliefert.
+      </p>
+      <div class="hero-ctas reveal-up delay-4">
+        <a href="#kontakt" class="btn-primary">Kostenlos anfragen</a>
+        <a href="#galerie" class="btn-ghost">Unsere Arbeiten ansehen</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ██ TRUST BAR ██ -->
+
+  <section class="trust-bar">
+    <div class="container trust-grid">
+      <div class="trust-item animate-count">
+        <div class="trust-val"><span class="counter" data-target="200">0</span>+</div>
+        <div class="trust-lbl">Abgeschlossene Projekte</div>
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-item animate-count">
+        <div class="trust-val"><span class="counter" data-target="12">0</span> Jahre</div>
+        <div class="trust-lbl">Erfahrung im Handwerk</div>
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-item animate-count">
+        <div class="trust-val"><span class="counter" data-target="98">0</span>%</div>
+        <div class="trust-lbl">Weiterempfehlungsrate</div>
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-item animate-count">
+        <div class="trust-val"><span class="counter" data-target="24">0</span>h</div>
+        <div class="trust-lbl">Reaktionszeit</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ██ SERVICES ██ -->
+
+  <section class="section services-section" id="leistungen">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-tag reveal-up">Was wir anbieten</span>
+        <h2 class="sec-title reveal-up">Unsere <em>Leistungen</em></h2>
+        <p class="sec-sub reveal-up">Von der Einzelmaßnahme bis zur Komplettrenovierung – alles aus einer Hand, alles mit Qualitätsgarantie.</p>
+      </div>
+      <div class="services-grid">
+        <div class="svc-card reveal-up">
+          <div class="svc-icon">🎨</div>
+          <h3>Malerarbeiten</h3>
+          <p>Innen- und Außenanstriche, Lacke, Lasuren – gleichmäßig, sauber und mit hochwertigen Materialien ausgeführt.</p>
+          <a href="#kontakt" class="svc-link">Jetzt anfragen <span>→</span></a>
+        </div>
+        <div class="svc-card featured reveal-up delay-1">
+          <div class="svc-popular">⭐ Meistgebucht</div>
+          <div class="svc-icon">🏠</div>
+          <h3>Komplettrenovierung</h3>
+          <p>Wir koordinieren alle Gewerke und liefern Ihnen ein schlüsselfertiges Ergebnis – ohne Stress.</p>
+          <a href="#kontakt" class="svc-link">Jetzt anfragen <span>→</span></a>
+        </div>
+        <div class="svc-card reveal-up delay-2">
+          <div class="svc-icon">🧱</div>
+          <h3>Trockenbau</h3>
+          <p>Wände, Decken, Trennwände – schnell und sauber. Ideal für Umbauten und neue Raumkonzepte.</p>
+          <a href="#kontakt" class="svc-link">Jetzt anfragen <span>→</span></a>
+        </div>
+        <div class="svc-card reveal-up">
+          <div class="svc-icon">🔲</div>
+          <h3>Bodenverlegung</h3>
+          <p>Parkett, Laminat, Vinyl, Fliesen – fachgerecht verlegt für ein edles und dauerhaftes Raumgefühl.</p>
+          <a href="#kontakt" class="svc-link">Jetzt anfragen <span>→</span></a>
+        </div>
+        <div class="svc-card reveal-up delay-1">
+          <div class="svc-icon">🛁</div>
+          <h3>Badrenovierung</h3>
+          <p>Fliesenarbeiten, Feuchtraumanstriche, Kleinreparaturen – Ihr Bad wieder strahlend neu.</p>
+          <a href="#kontakt" class="svc-link">Jetzt anfragen <span>→</span></a>
+        </div>
+        <div class="svc-card reveal-up delay-2">
+          <div class="svc-icon">📐</div>
+          <h3>Tapezierarbeiten</h3>
+          <p>Tapeten aller Art, von klassisch bis modern. Kreative Wandgestaltung nach Ihren Vorstellungen.</p>
+          <a href="#kontakt" class="svc-link">Jetzt anfragen <span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ██ GALLERY ██ -->
+
+  <section class="section gallery-section" id="galerie">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-tag reveal-up">Referenzen</span>
+        <h2 class="sec-title reveal-up">Unsere <em>Arbeiten</em></h2>
+        <p class="sec-sub reveal-up">Einblicke in abgeschlossene Projekte – überzeugen Sie sich selbst von unserer Qualität.</p>
+      </div>
+      <div class="gallery-filters reveal-up">
+        <button class="gf-btn active" data-filter="all">Alle Projekte</button>
+        <button class="gf-btn" data-filter="maler">Maler</button>
+        <button class="gf-btn" data-filter="boden">Böden</button>
+        <button class="gf-btn" data-filter="bad">Bad</button>
+        <button class="gf-btn" data-filter="renovierung">Renovierung</button>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="g-item" data-cat="renovierung">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=700&q=80" alt="Wohnzimmer Renovierung" loading="lazy" />
+          <div class="g-overlay"><span>Wohnzimmer Renovierung</span><button class="g-expand" aria-label="Vergrößern">⤢</button></div>
+        </div>
+        <div class="g-item g-wide" data-cat="bad">
+          <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=900&q=80" alt="Badezimmer Sanierung" loading="lazy" />
+          <div class="g-overlay"><span>Badezimmer Sanierung</span><button class="g-expand" aria-label="Vergrößern">⤢</button></div>
+        </div>
+        <div class="g-item" data-cat="maler">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80" alt="Malerarbeiten" loading="lazy" />
+          <div class="g-overlay"><span>Wand- &amp; Malerarbeiten</span><button class="g-expand" aria-label="Vergrößern">⤢</button></div>
+        </div>
+        <div class="g-item" data-cat="boden">
+          <img src="https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14?w=700&q=80" alt="Parkett Verlegung" loading="lazy" />
+          <div class="g-overlay"><span>Parkett Verlegung</span><button class="g-expand" aria-label="Vergrößern">⤢</button></div>
+        </div>
+        <div class="g-item g-tall" data-cat="renovierung">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" alt="Küche Renovierung" loading="lazy" />
+          <div class="g-overlay"><span>Küche Komplettrenovierung</span><button class="g-expand" aria-label="Vergrößern">⤢</button></div>
+        </div>
+        <div class="g-item" data-cat="maler">
+          <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=700&q=80" alt="Moderner Anstrich" loading="lazy" />
+          <div class="g-overlay"><span>Moderner Anstrich</span><button class="g-expand" aria-label="Vergrößern">⤢</button></div>
+        </div>
+        <div class="g-item" data-cat="boden">
+          <img src="https://images.unsplash.com/photo-1580237072353-751a8a5b2561?w=700&q=80" alt="Fliesen Bad" loading="lazy" />
+          <div class="g-overlay"><span>Fliesen Verlegung</span><button class="g-expand" aria-label="Vergrößern">⤢</button></div>
+        </div>
+        <div class="g-item" data-cat="renovierung">
+          <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?w=700&q=80" alt="Schlafzimmer" loading="lazy" />
+          <div class="g-overlay"><span>Schlafzimmer Renovierung</span><button class="g-expand" aria-label="Vergrößern">⤢</button></div>
+        </div>
+        <div class="g-item g-wide" data-cat="bad">
+          <img src="https://images.unsplash.com/photo-1620626011761-996317702519?w=900&q=80" alt="Wellness-Bad" loading="lazy" />
+          <div class="g-overlay"><span>Wellness-Bad</span><button class="g-expand" aria-label="Vergrößern">⤢</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ██ LIGHTBOX ██ -->
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Bildvorschau">
+    <button class="lb-close" id="lbClose" aria-label="Schließen">✕</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Vorheriges Bild">‹</button>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Nächstes Bild">›</button>
+    <div class="lb-content">
+      <img id="lbImg" src="" alt="" />
+      <p id="lbCaption"></p>
+    </div>
+  </div>
+
+  <!-- ██ PROCESS ██ -->
+
+  <section class="section process-section">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-tag reveal-up">So einfach geht's</span>
+        <h2 class="sec-title reveal-up">In <em>4 Schritten</em> zum Ergebnis</h2>
+      </div>
+      <div class="process-steps">
+        <div class="proc-step reveal-up">
+          <div class="proc-num">01</div>
+          <div class="proc-line"></div>
+          <div class="proc-body">
+            <h3>Kostenlose Beratung</h3>
+            <p>Kontaktieren Sie uns per WhatsApp, Anruf oder Formular. Rückmeldung innerhalb von 24 Stunden.</p>
+          </div>
+        </div>
+        <div class="proc-step reveal-up delay-1">
+          <div class="proc-num">02</div>
+          <div class="proc-line"></div>
+          <div class="proc-body">
+            <h3>Vor-Ort-Termin</h3>
+            <p>Wir begutachten Ihr Projekt und erstellen ein transparentes, detailliertes Angebot.</p>
+          </div>
+        </div>
+        <div class="proc-step reveal-up delay-2">
+          <div class="proc-num">03</div>
+          <div class="proc-line"></div>
+          <div class="proc-body">
+            <h3>Präzise Ausführung</h3>
+            <p>Unser erfahrenes Team arbeitet sauber, pünktlich und auf höchstem Qualitätsniveau.</p>
+          </div>
+        </div>
+        <div class="proc-step reveal-up delay-3">
+          <div class="proc-num">04</div>
+          <div class="proc-line last"></div>
+          <div class="proc-body">
+            <h3>Übergabe &amp; Garantie</h3>
+            <p>Gemeinsame Abnahme, Mängel kostenlos beseitigt – Ihre Zufriedenheit ist unser Versprechen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ██ PRICING ██ -->
+
+  <section class="section pricing-section" id="preise">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-tag reveal-up">Transparente Preise</span>
+        <h2 class="sec-title reveal-up">Faire <em>Preispakete</em></h2>
+        <p class="sec-sub reveal-up">Keine versteckten Kosten. Klare Leistungen. Jederzeit individualisierbar.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="price-card reveal-up">
+          <div class="price-head">
+            <h3>Basis</h3>
+            <div class="price-amount"><span class="p-from">ab</span> <span class="p-val">299</span><span class="p-cur">€</span></div>
+            <p>Ideal für einzelne Maßnahmen</p>
+          </div>
+          <ul class="price-list">
+            <li class="yes">Malerarbeiten (1 Raum)</li>
+            <li class="yes">Materialberatung inkl.</li>
+            <li class="yes">Saubere Ausführung</li>
+            <li class="yes">Nacharbeiten inkl.</li>
+            <li class="no">Mehrere Gewerke</li>
+            <li class="no">Projektkoordination</li>
+          </ul>
+          <a href="#kontakt" class="btn-price">Anfragen</a>
+        </div>
+        <div class="price-card popular reveal-up delay-1">
+          <div class="price-badge">Empfohlen</div>
+          <div class="price-head">
+            <h3>Standard</h3>
+            <div class="price-amount"><span class="p-from">ab</span> <span class="p-val">799</span><span class="p-cur">€</span></div>
+            <p>Für Wohnungen &amp; mehrere Räume</p>
+          </div>
+          <ul class="price-list">
+            <li class="yes">Bis 3 Gewerke kombiniert</li>
+            <li class="yes">Materialberatung inkl.</li>
+            <li class="yes">Saubere Ausführung</li>
+            <li class="yes">Nacharbeiten inkl.</li>
+            <li class="yes">Projektkoordination</li>
+            <li class="no">Komplette Sanierung</li>
+          </ul>
+          <a href="#kontakt" class="btn-price gold">Jetzt anfragen</a>
+        </div>
+        <div class="price-card reveal-up delay-2">
+          <div class="price-head">
+            <h3>Premium</h3>
+            <div class="price-amount"><span class="p-from">ab</span> <span class="p-val">1.999</span><span class="p-cur">€</span></div>
+            <p>Komplettrenovierung aus einer Hand</p>
+          </div>
+          <ul class="price-list">
+            <li class="yes">Alle Gewerke kombinierbar</li>
+            <li class="yes">Persönlicher Projektleiter</li>
+            <li class="yes">Material &amp; Planung inkl.</li>
+            <li class="yes">Vollständige Koordination</li>
+            <li class="yes">2 Jahre Qualitätsgarantie</li>
+            <li class="yes">Wunschtermin &amp; Priorität</li>
+          </ul>
+          <a href="#kontakt" class="btn-price">Anfragen</a>
+        </div>
+      </div>
+      <p class="price-note reveal-up">* Alle Preisangaben zzgl. gesetzlicher MwSt. Verbindliche Endpreise nach kostenloser Vor-Ort-Besichtigung. Angebot innerhalb 48 Stunden.</p>
+    </div>
+  </section>
+
+  <!-- ██ ABOUT ██ -->
+
+  <section class="section about-section" id="ueber-uns">
+    <div class="container about-grid">
+      <div class="about-visuals reveal-left">
+        <div class="about-img-main">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=560&q=80" alt="Raumhandwerk Team bei der Arbeit" loading="lazy" />
+        </div>
+        <div class="about-img-accent">
+          <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=380&q=80" alt="Handwerksdetail" loading="lazy" />
+        </div>
+        <div class="about-badge-float">
+          <span class="badge-icon">🏅</span>
+          <div>
+            <strong>Meisterbetrieb</strong>
+            <span>Geprüfte Qualität</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-content reveal-right">
+        <span class="sec-tag">Über Raumhandwerk</span>
+        <h2 class="sec-title">Handwerk mit <em>Herzblut &amp; Präzision</em></h2>
+        <p class="about-lead">Raumhandwerk steht für ehrliche Arbeit, transparente Preise und Ergebnisse, auf die Sie stolz sein können.</p>
+        <p>Seit über 12 Jahren verwandeln wir Räume in Wohlfühloasen. Unser Team aus erfahrenen Fachkräften arbeitet nach höchsten Standards – pünktlich, sauber und mit Leidenschaft für das Handwerk.</p>
+        <div class="about-usp">
+          <div class="usp-item">
+            <span class="usp-ic">✅</span>
+            <div><strong>Terminzuverlässigkeit</strong><p>Vereinbarte Termine werden eingehalten – das ist für uns selbstverständlich.</p></div>
+          </div>
+          <div class="usp-item">
+            <span class="usp-ic">🔍</span>
+            <div><strong>Sauberkeit &amp; Präzision</strong><p>Wir hinterlassen besenreine Räume und detailgenaue Ergebnisse.</p></div>
+          </div>
+          <div class="usp-item">
+            <span class="usp-ic">💬</span>
+            <div><strong>Klare Kommunikation</strong><p>Keine Überraschungen – Sie wissen immer, was als Nächstes passiert.</p></div>
+          </div>
+        </div>
+        <a href="#kontakt" class="btn-primary">Kostenlos beraten lassen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ██ TESTIMONIALS ██ -->
+
+  <section class="section testi-section">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-tag reveal-up">Bewertungen</span>
+        <h2 class="sec-title reveal-up">Was unsere <em>Kunden sagen</em></h2>
+        <p class="sec-sub reveal-up">Echte Stimmen. Echte Ergebnisse.</p>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card reveal-up">
+          <div class="testi-stars">★★★★★</div>
+          <p>„Absolut zufrieden! Die Renovierung wurde pünktlich und in perfekter Qualität abgeliefert. Sehr sauber und professionell. Klare Empfehlung!"</p>
+          <div class="testi-author">
+            <div class="testi-av">M.S</div>
+            <div><strong>Michael S.</strong><span>Düsseldorf · Wohnzimmer Renovierung</span></div>
+          </div>
+        </div>
+        <div class="testi-card featured reveal-up delay-1">
+          <div class="testi-stars">★★★★★</div>
+          <p>„Von der Beratung bis zur Übergabe alles erstklassig. Kommunikation vorbildlich, Preis fair, Ergebnis übertrifft unsere Erwartungen bei Weitem."</p>
+          <div class="testi-author">
+            <div class="testi-av">S.K</div>
+            <div><strong>Sandra K.</strong><span>Köln · Komplettrenovierung</span></div>
+          </div>
+        </div>
+        <div class="testi-card reveal-up delay-2">
+          <div class="testi-stars">★★★★★</div>
+          <p>„Unser Bad wurde komplett neu gefliest – wir sind begeistert. Sauber, schnell, fair im Preis. Definitiv wieder unser erster Ansprechpartner."</p>
+          <div class="testi-author">
+            <div class="testi-av">T.M</div>
+            <div><strong>Thomas M.</strong><span>Essen · Badrenovierung</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ██ CTA BANNER ██ -->
+
+  <section class="cta-banner">
+    <div class="cta-bg"></div>
+    <div class="container cta-body">
+      <h2 class="reveal-up">Bereit für Ihren <em>Traumraum</em>?</h2>
+      <p class="reveal-up delay-1">Kostenlose Beratung &amp; unverbindliches Angebot – innerhalb von 48 Stunden.</p>
+      <div class="cta-actions reveal-up delay-2">
+        <a href="#kontakt" class="btn-primary large">Jetzt kostenlos anfragen</a>
+        <a href="https://wa.me/4915XXXXXXXXX" class="btn-wa-cta large" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i> WhatsApp schreiben
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ██ CONTACT ██ -->
+
+  <section class="section contact-section" id="kontakt">
+    <div class="container contact-grid">
+      <div class="contact-left reveal-left">
+        <span class="sec-tag">Kontakt aufnehmen</span>
+        <h2 class="sec-title">Sprechen wir über <em>Ihr Projekt</em></h2>
+        <p>Füllen Sie das Formular aus oder wählen Sie einen direkten Kontaktweg. Wir melden uns schnellstmöglich.</p>
+        <div class="contact-ways">
+          <a href="tel:+49XXXXXXXXXXX" class="contact-way">
+            <span class="cw-icon">📞</span>
+            <div><strong>Telefon</strong><span>+49 XXX XXXXXXXX</span></div>
+          </a>
+          <a href="mailto:info@raumhandwerk.de" class="contact-way">
+            <span class="cw-icon">✉️</span>
+            <div><strong>E-Mail</strong><span>info@raumhandwerk.de</span></div>
+          </a>
+          <a href="https://wa.me/4915XXXXXXXXX" class="contact-way" target="_blank">
+            <span class="cw-icon">💬</span>
+            <div><strong>WhatsApp</strong><span>Jetzt direkt schreiben</span></div>
+          </a>
+        </div>
+        <div class="opening-hours">
+          <strong>Erreichbarkeit:</strong>
+          <p>Mo – Fr: 08:00 – 18:00 Uhr<br>Sa: 09:00 – 14:00 Uhr</p>
+        </div>
+      </div>
+      <div class="contact-right reveal-right">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="cf-name">Name *</label>
+              <input type="text" id="cf-name" name="name" placeholder="Ihr vollständiger Name" required />
+            </div>
+            <div class="form-field">
+              <label for="cf-phone">Telefon</label>
+              <input type="tel" id="cf-phone" name="phone" placeholder="+49 ..." />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="cf-email">E-Mail *</label>
+            <input type="email" id="cf-email" name="email" placeholder="ihre@email.de" required />
+          </div>
+          <div class="form-field">
+            <label for="cf-service">Gewünschte Leistung</label>
+            <select id="cf-service" name="service">
+              <option value="">Bitte auswählen …</option>
+              <option value="maler">Malerarbeiten</option>
+              <option value="boden">Bodenverlegung</option>
+              <option value="bad">Badrenovierung</option>
+              <option value="trockenbau">Trockenbau</option>
+              <option value="komplett">Komplettrenovierung</option>
+              <option value="tapezieren">Tapezierarbeiten</option>
+              <option value="sonstiges">Sonstiges</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="cf-msg">Ihre Nachricht *</label>
+            <textarea id="cf-msg" name="message" rows="4" placeholder="Beschreiben Sie kurz Ihr Projekt und Ihre Wünsche …" required></textarea>
+          </div>
+          <div class="form-privacy-check">
+            <input type="checkbox" id="cf-privacy" name="privacy" required />
+            <label for="cf-privacy">Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a> gelesen und stimme zu. *</label>
+          </div>
+          <button type="submit" class="btn-primary full">
+            Kostenlos anfragen <span class="btn-arr">→</span>
+          </button>
+          <div class="form-ok" id="formOk">
+            ✅ Ihre Anfrage wurde gesendet! Wir melden uns innerhalb von 24 Stunden.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ██ FOOTER ██ -->
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo footer-logo" aria-label="Raumhandwerk">
+          <span class="logo-r">R</span>
+          <span>Raumhandwerk</span>
+        </a>
+        <p>Professionelle Handwerksleistungen mit Leidenschaft und Präzision – in Ihrer Region.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/4915XXXXXXXXX" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Leistungen</h4>
+        <ul>
+          <li><a href="#leistungen">Malerarbeiten</a></li>
+          <li><a href="#leistungen">Bodenverlegung</a></li>
+          <li><a href="#leistungen">Trockenbau</a></li>
+          <li><a href="#leistungen">Badrenovierung</a></li>
+          <li><a href="#leistungen">Komplettrenovierung</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#ueber-uns">Über uns</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#preise">Preise</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bot-inner">
+        <p>© 2025 Raumhandwerk. Alle Rechte vorbehalten.</p>
+        <p>Designed with ♥ in Deutschland</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

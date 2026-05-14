@@ -1205,3 +1205,31 @@ h1,h2,h3,h4 { font-family: var(--font-head); }
 
 /* ── Selection ── */
 ::selection { background: rgba(196,154,74,.25); color: var(--c-dark); }
+
+/* Suche: .hero { */
+/* Ergänze background als erste Eigenschaft: */
+.hero {
+  background: var(--c-dark-2); /* ← NEU: Fallback wenn Bild nicht lädt */
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  overflow: hidden;
+}
+/* Fallback: Falls JS nicht läuft oder Observer nicht triggert */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-up, .reveal-left, .reveal-right {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* Sicherheitsnetz nach 0ms für bereits im Viewport liegende Elemente */
+.reveal-up, .reveal-left, .reveal-right {
+  transition-delay: 0s;
+}
+.reveal-up.visible, .reveal-left.visible, .reveal-right.visible {
+  opacity: 1 !important;
+  transform: none !important;
+}
